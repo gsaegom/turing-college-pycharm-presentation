@@ -1,7 +1,6 @@
 import pandas as pd
 
 
-
 def get_number_passengers(df: pd.DataFrame, sex: str, p_class: int):
     return df[(df['Sex'] == sex) & (df['Pclass'] == p_class)].size
 
